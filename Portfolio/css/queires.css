@@ -1,0 +1,152 @@
+
+/* 
+
+desktop: 1200px - xl
+laptop: 1024px - l
+tablet: 768px - m
+mobile: 480px - sm
+nav- 655px
+*/
+
+@media (max-width: 1200px) {
+    .hero-name {
+        left: 8%;
+    }
+}
+
+@media (max-width: 1024px) {
+  .hero-name {
+      font-size: 28px;
+    } 
+
+    .menu-item  {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    label #btn {
+        display: inline;
+        position: absolute;
+        right: 25px;
+        top: 0;
+    }
+
+    .menu-items {
+        display: inline;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #05386b;
+        top: 80px;
+        transform: translateX(-100%);
+        text-align: center;
+        z-index: 1;
+        transition: .4s ease;
+    }
+
+    .menu-item {
+        display: block;
+        margin: 50px 0;
+        /* line-height:30px; */
+    }
+
+    .menu-item a {
+        font-size: 20px;
+        color: #46d586;
+        /* z-index: 2; */
+    }
+    .active-nav {
+        transform: translateX(0);
+    }
+
+    #intro_line1, 
+    #intro_line2, 
+    #intro_line3,  
+    #intro_line1, 
+    #intro_line2 span, 
+    #intro_line3 span  {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #intro_line3 span:nth-child(1) {
+        display: block;
+        width: 265px;
+        margin-bottom: 15px;
+        
+    }
+
+
+    .about_me-img,  
+    .about_me-border {
+        height: 220px;
+    }
+
+    #about_me-heading {
+        font-size: 40px;
+    }
+
+    #about_me-content1 {
+        font-size: 20px;
+    }
+
+    #about_me-content2 {
+        font-size: 14px;
+    }
+
+    #skills-heading {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    
+    #intro_line1, 
+    #intro_line2, 
+    #intro_line3,  
+    #intro_line1, 
+    #intro_line2 span, 
+    #intro_line3 span  {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    
+    #intro_line3 span:nth-child(1) {
+        width: 230px;
+        margin-bottom: 15px;
+        
+    }
+
+    #about_me-heading {
+        font-size: 30px;
+
+    }
+
+    #about_me-content {
+        font-size: 16px;
+    }
+
+    .form_container {
+        max-width: 90%; 
+    }
+
+    .contact_heading {
+        font-size: 30px;
+    }
+
+    .input_feild label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero_img {
+        left: -10px;
+        top: 20px;
+    }
+}
